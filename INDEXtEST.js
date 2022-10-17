@@ -10,19 +10,41 @@ for (let i = 0 ; i <values ; i++){
           m  += " " + "";
          }
 
-         values = values-1;
-          arry[0] = m;
-        arry.push(valuePrint);
-        var myvalue = 
+         
+
+        if(values < 10){
+        arry.push("I");
+        }
+        else if (values < 20){
+         arry.push("L");
+        }
+        else{
+         arry.push("A");
+        }
+
+        values = values-1;
+         arry[0] = m;
+
         console.log(""+arry);
    
        }  
 }
 
 for (let k= arry.length ; k >0; k--){
-   m  += " " + "";
-   arry[0] = m;
-  arry.pop(valuePrint)
+ 
+   if(values >10){
+      arry.pop("A");
+      }
+      else if (values >20){
+       arry.pop("L");
+      }
+      else{
+       arry.pop("I");
+      }
+      m  += " " + "";
+      arry[0] = m;
+   
+
   console.log(""+arry);
 
   }
